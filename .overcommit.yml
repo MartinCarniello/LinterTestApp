@@ -16,6 +16,18 @@
 # Uncomment the following lines to make the configuration take effect.
 
 PreCommit:
+  JsHint:
+    enabled: true
+    on_warn: fail # Treat all warnings as failures
+    command: ['bundle', 'exec', 'rake', 'jshint']
+  CssLint:
+    enabled: true
+    on_warn: fail # Treat all warnings as failures
+    command: ['bundle', 'exec', 'rake', 'css_lint:run']
+  ScssLint:
+    enabled: true
+    on_warn: fail
+    command: ['bundle', 'exec', 'rake', 'scss:run']
   RuboCop:
     enabled: true
     on_warn: fail # Treat all warnings as failures
