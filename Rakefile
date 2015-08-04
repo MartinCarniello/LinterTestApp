@@ -2,5 +2,7 @@
 # for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
 
 require File.expand_path('../config/application', __FILE__)
+require 'scss_lint/rake_task'
 
 Rails.application.load_tasks
+SCSSLint::RakeTask.new

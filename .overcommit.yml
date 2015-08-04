@@ -27,7 +27,7 @@ PreCommit:
   ScssLint:
     enabled: true
     on_warn: fail
-    command: ['bundle', 'exec', 'rake', 'scss:run']
+    command: ['bundle', 'exec', 'rake', 'scss_lint']
   RuboCop:
     enabled: true
     on_warn: fail # Treat all warnings as failures

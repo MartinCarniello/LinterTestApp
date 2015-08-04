@@ -5,19 +5,25 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
+AllCops:
+  RunRailsCops: true
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+
 # Offense count: 1
 # Configuration parameters: AllowSafeAssignment.
 Lint/AssignmentInCondition:
-  Enabled: false
+  Enabled: true
 
 # Offense count: 2
 Lint/HandleExceptions:
-  Enabled: false
+  Enabled: true
 
 # Offense count: 1
 # Cop supports --auto-correct.
 Lint/UnusedMethodArgument:
-  Enabled: false
+  Enabled: true
 
 # Offense count: 27
 # Configuration parameters: AllowURI, URISchemes.
