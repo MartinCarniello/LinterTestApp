@@ -3,6 +3,7 @@ exclude_paths: []
 options:
   boss:       true
   browser:    true
+  devel:      true
   curly:      true
   eqeqeq:     true
   eqnull:     true
